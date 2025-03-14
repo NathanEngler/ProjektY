@@ -35,13 +35,10 @@ Die Komponenten wurden bewusst separat entwickelt und abgegeben, ohne eine volls
 
 2.	Datenbank vorbereiten:
 •	Die PostgreSQL-Datenbank muss manuell erstellt werden, bevor die Anwendung gestartet wird (zum Beispiel über pgAdmin): 
-CREATE DATABASE Twitter;
-CREATE USER postgres WITH ENCRYPTED PASSWORD '1234';
-GRANT ALL PRIVILEGES ON DATABASE Twitter TO postgres;
-(siehe application.yml im Backend)
-3.	 Backend starten 
---> Repository klonen und Run-Button betätigen
-4.	Frontend starten
---> Repository klonen und Run-Button betätigen
-5.	Über GUI einen User registrieren
-6.	Funktionen der GUI austesten
+Passwort als Umgebungsvariable --> siehe application.yml im TwitterBackend
+
+CREATE DATABASE Twitter; CREATE USER postgres WITH ENCRYPTED PASSWORD Umgebungsvariable; GRANT ALL PRIVILEGES ON DATABASE Twitter TO postgres;
+
+3. Repository klonen und Backend/Frontend einzeln öffnen und mit Run starten
+4. Über GUI einen User registrieren
+5. Funktionen der GUI austesten
