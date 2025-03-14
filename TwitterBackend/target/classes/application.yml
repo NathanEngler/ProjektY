@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/Twitter
     username: postgres
-    password: 1234
+    password: ${DB-Passwort}
   jpa:
     hibernate:
       ddl-auto: update
